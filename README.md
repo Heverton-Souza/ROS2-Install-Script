@@ -101,6 +101,7 @@ The project is organized as follows:
         - Copy the installation script into the container.
         - Make the script executable.
         - Execute the installation script during the Docker image build process.
+        - Automatically install colcon (a command-line tool to build multiple packages).
 
     This allows you to run the ```docker run``` command and have ROS 2 installed based on the type of script configured in the Dockerfile (base or desktop).
 

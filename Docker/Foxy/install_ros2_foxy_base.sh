@@ -33,5 +33,10 @@ source /opt/ros/foxy/setup.bash
 # Add to bashrc to load automatically
 echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
 
+# Install colcon
+apt install python3-colcon-common-extensions
+
+# Add to bashrc to load automatically
+echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc
 
 echo "Installation completed. Open a new terminal or run 'source ~/.bashrc' to load the environment variables."
