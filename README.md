@@ -26,9 +26,9 @@ The project is organized as follows:
 |   |   |--- install_ros2_iron_base  # base version script
 |   |   |--- install_ros2_iron_desktop  # desktop version script
 |   |--- Jazzy/
-|   |   |--- Dockerfile
-|   |   |--- install_ros2_jazzy_base  # base version script
-|   |   |--- install_ros2_jazzy_desktop  # desktop version script
+|       |--- Dockerfile
+|       |--- install_ros2_jazzy_base  # base version script
+|       |--- install_ros2_jazzy_desktop  # desktop version script
 |--- Scripts/
     |--- Foxy/    
     |   |--- install_ros2_foxy_base  # base version script
@@ -41,9 +41,9 @@ The project is organized as follows:
     |   |--- install_ros2_iron_base  # base version script
     |   |--- install_ros2_iron_desktop  # desktop version script
     |--- Jazzy/
-    |   |--- Dockerfile
-    |   |--- install_ros2_jazzy_base  # base version script
-    |   |--- install_ros2_jazzy_desktop  # desktop version script
+        |--- Dockerfile
+        |--- install_ros2_jazzy_base  # base version script
+        |--- install_ros2_jazzy_desktop  # desktop version script
 ```
 ## 🛠️ How to Use
 
