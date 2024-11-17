@@ -1,7 +1,7 @@
 # ROS 2 Installation Scripts  
 ![ROS 2 Logo](https://www.freshconsulting.com/wp-content/uploads/fly-images/33744/ROS-2_logo-1920x9999.png)
 
-This project contains scripts to install different versions of ROS 2 (Foxy, Humble, Iron) with **base** or **desktop** versions. The scripts are organized into two main folders:
+This project contains scripts to install different versions of ROS 2 (Foxy, Humble, Iron and Jazzy) with **base** or **desktop** versions. The scripts are organized into two main folders:
 
 - **Scripts/**: Regular installation scripts for ROS 2.
 
@@ -25,6 +25,10 @@ The project is organized as follows:
 |   |   |--- Dockerfile
 |   |   |--- install_ros2_iron_base  # base version script
 |   |   |--- install_ros2_iron_desktop  # desktop version script
+|   |--- Jazzy/
+|   |   |--- Dockerfile
+|   |   |--- install_ros2_jazzy_base  # base version script
+|   |   |--- install_ros2_jazzy_desktop  # desktop version script
 |--- Scripts/
     |--- Foxy/    
     |   |--- install_ros2_foxy_base  # base version script
@@ -36,6 +40,10 @@ The project is organized as follows:
     |   |--- Dockerfile
     |   |--- install_ros2_iron_base  # base version script
     |   |--- install_ros2_iron_desktop  # desktop version script
+    |--- Jazzy/
+    |   |--- Dockerfile
+    |   |--- install_ros2_jazzy_base  # base version script
+    |   |--- install_ros2_jazzy_desktop  # desktop version script
 ```
 ## 🛠️ How to Use
 
@@ -88,7 +96,7 @@ The project is organized as follows:
 
     The **Dockerfiles** contain instructions to:
 
-        - Download a base Ubuntu 22.04 image.
+        - Download a base Ubuntu image according to the ROS version requirements.
         - Install the necessary dependencies for ROS 2.
         - Copy the installation script into the container.
         - Make the script executable.
