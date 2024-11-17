@@ -1,0 +1,22 @@
+# Use the Ubuntu 22.04 base image
+FROM ubuntu:22.04
+
+# Set an environment variable to avoid interactive prompts
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Update packages and install necessary dependencies (if needed)
+RUN apt-get update && apt-get install -y \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy the script into the container (Change the script name according to the desired ROS 2 version)
+COPY install_ros2_iron_desktop.sh /home/install_ros2_iron_desktop.sh 
+
+# Make the script executable (Change the script name according to the desired ROS 2 version)
+RUN chmod +x /home/install_ros2_iron_desktop.sh
+
+# Execute the script during the image build process (Change the script name according to the desired ROS 2 version)
+RUN /home/install_ros2_iron_desktop.sh
+
+# Default command when the container starts (optional)
+CMD ["/bin/bash"]
