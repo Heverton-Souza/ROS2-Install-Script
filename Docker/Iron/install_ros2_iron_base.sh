@@ -34,7 +34,7 @@ source /opt/ros/iron/setup.bash
 echo "source /opt/ros/iron/setup.bash" >> ~/.bashrc
 
 # Install colcon
-apt install python3-colcon-common-extensions
+apt install -y python3-colcon-common-extensions
 
 # Add to bashrc to load automatically
 echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc

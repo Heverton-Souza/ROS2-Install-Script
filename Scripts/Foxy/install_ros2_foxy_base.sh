@@ -34,7 +34,7 @@ source /opt/ros/foxy/setup.bash
 echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
 
 # Install colcon
-sudo apt install python3-colcon-common-extensions
+sudo apt install -y python3-colcon-common-extensions
 
 # Add to bashrc to load automatically
 echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc
